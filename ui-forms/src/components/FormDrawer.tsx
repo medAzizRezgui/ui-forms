@@ -4,9 +4,8 @@ import {
   DrawerBody,
   DrawerOverlay,
   DrawerContent,
-  DrawerCloseButton,
 } from "@chakra-ui/react";
-
+import styles from "../styles/customStyles.module.css";
 import type { FormDrawerProps } from "../types/Types";
 const FormDrawer: React.FC<FormDrawerProps> = ({
   children,
@@ -19,13 +18,14 @@ const FormDrawer: React.FC<FormDrawerProps> = ({
       <Drawer isOpen={isOpen} placement="bottom" onClose={onClose}>
         <DrawerOverlay />
         <DrawerContent
-          w={"80%"}
+          position={"relative"}
+          w={"40%"}
           mx={"auto"}
-          rounded={"15px 15px 0px 0px"}
-          h={"80vh"}
+          rounded={"15px"}
+          h={"90vh"}
+          mb={"30px"}
         >
-          <DrawerCloseButton />
-          <DrawerBody>{children}</DrawerBody>
+          <DrawerBody className={styles.DrawerBody}>{children}</DrawerBody>
         </DrawerContent>
       </Drawer>
     </>

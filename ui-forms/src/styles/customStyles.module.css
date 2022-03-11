@@ -1,0 +1,37 @@
+.DrawerBody::-webkit-scrollbar {
+  width: 16px;
+}
+
+.DrawerBody::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+/* Handle */
+.DrawerBody::-webkit-scrollbar-thumb {
+  background-color: #29cc97;
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+.DrawerBody::-webkit-scrollbar-thumb:hover {
+  background: #239a73;
+}
+input[type="file"] {
+  display: none;
+}
+.customFileUpload {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 6px 12px;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  border-radius: 8px;
+  height: 50px;
+}
