@@ -5,7 +5,7 @@ import RendezVous from "./pages/RendezVous";
 const App = () => {
   return (
     <>
-      {/*<CandidateForm />*/}
+      <CandidateForm />
       <RendezVous />
     </>
   );

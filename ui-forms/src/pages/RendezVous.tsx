@@ -27,38 +27,11 @@ import {
 } from "@chakra-ui/react";
 import FormButtons from "../components/FormButtons";
 import MyTextInput from "../components/MyTextInput";
-const jobOptions = [
-  { value: "Front End Developer", label: "Front End Developer" },
-  { value: "Designer", label: "Designer" },
-  { value: "UI/UX Engineer", label: "UI/UX Engineer" },
-];
-const emailOptions = [
-  { value: "test@test.com", label: "test@test.com" },
-  { value: "azizrezgui4@gmail.com", label: "azizrezgui4@gmail.com" },
-  { value: "slah.2@outlook.com", label: "slah.2@outlook.com" },
-];
-const recOptions = [
-  { value: "test@test.com", label: "test@test.com" },
-  { value: "azizrezgui4@gmail.com", label: "azizrezgui4@gmail.com" },
-  { value: "slah.2@outlook.com", label: "slah.2@outlook.com" },
-];
+import { jobOptions, recOptions, emailOptions } from "../data/rendezVousData";
+import type { InitValuesType } from "../types/Types";
 const RendezVous = () => {
   const { isOpen, onClose, onOpen } = useDisclosure();
-  type InitValuesType = {
-    titre: string;
-    selectedEmail: string;
-    selectedJob: string;
-    selectedDate: string;
-    startHour: string;
-    endHour: string;
-    location: string;
-    selectedRec: RecType[];
-    message: string;
-  };
-  type RecType = {
-    value: string;
-    label: string;
-  };
+
   const initValues: InitValuesType = {
     titre: "",
     selectedEmail: "",
